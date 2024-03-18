@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let String = "12ab4a1231222223fsdfdaweefsefsdfhhhhs";
+    let SizeString = String.length;
+    let alreadyCount = new Array(SizeString);
+    let CountCharacterInList = [], CharacterList = [];
+
+    for (let i = 0; i < alreadyCount.length; i++) {
+        alreadyCount [i] = 0;
+    }
+    for (let i = 0; i < String.length; i++) {
+        if (alreadyCount[i] !== 1) {
+            let countString = 0;
+            for (let j = 0; j < String.length; j++) {
+                if (String[j] === String[i]) {
+                    countString++;
+                    alreadyCount [j] = 1;
+                }
+            }
+            CharacterList.push(String[i]);
+            CountCharacterInList.push(countString);
+        }
+    }
+    for (let i = 0; i < CharacterList.length; i++) {
+        console.log("The Character " + CharacterList[i] + " Appear " + CountCharacterInList[i] + " times");
+    }
+</script>
+</body>
+</html>

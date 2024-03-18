@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [3, 2, 5],
+        [4, 6, 7],
+        [4, 6, 2]
+    ];
+    // let max = arr[0][0];
+    // let sum = 0;
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = 0; j < arr[i].length; j++) {
+    //         if (arr[i][j] > max) {
+    //             max = arr[i][j];
+    //         }
+    //         sum += arr[i][j];
+    //     }
+    // }
+    // console.log("Phần tử lớn nhất của mảng là : " + max);
+
+    let sumEachRow;
+    for (let i = 0; i < arr.length; i++) {
+        sumEachRow = 0;
+        for (let j = 0; j < arr[i].length; j++) {
+            sumEachRow += arr[i][j];
+        }
+        console.log(sumEachRow);
+    }
+
+</script>
+</body>
+</html>

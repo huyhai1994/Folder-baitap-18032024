@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let character = 'The Quick Brown Fox';
+    let newCharacter = [];
+    for (let i = 0; i < character.length; i++) {
+        if (character[i] === character[i].toUpperCase() && character[i] !== " ") {
+            newCharacter [i] = character[i].toLowerCase();
+            continue;
+        } else if (character[i] === character[i].toLowerCase() && character[i] !== " ") {
+            newCharacter [i] = character[i].toUpperCase();
+            continue;
+        } else if (character[i] === " ") {
+            newCharacter [i] = " ";
+            continue;
+        }
+        i++;
+    }
+    console.log(newCharacter);
+</script>
+</body>
+</html>

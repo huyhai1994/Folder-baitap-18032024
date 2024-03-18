@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = "126-23123-23123-123";
+    let newArray = new Array(array.length);
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === "-") {
+            newArray[i] = "_";
+        } else {
+            newArray[i] = array[i];
+        }
+    }
+    console.log(newArray);
+    newString = " ";
+    for (let i = 0; i < newArray.length; i++) {
+        newString += newArray[i];
+    }
+    console.log(newString);
+</script>
+</body>
+</html>
